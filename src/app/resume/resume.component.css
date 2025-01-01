@@ -1,0 +1,33 @@
+.container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.resume-container{
+    width: min(800px,100vw);
+    height: 70vh;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+.resume-container div {
+    padding: 20px;
+    min-width: 100px;
+    width: 300px;
+    color: #29518C;
+    background-color: #6091CC;
+    text-align: center;
+    border-radius: 5px;
+    &:hover {
+        background-color: #29518C;
+        color: white;
+    }
+}
+a {
+    all: unset;
+}

@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="rech-container">
+        <div class="main">
+            <div>{{ 'type' | translate }}</div>
+            <div>{{ 'description' | translate }}</div>
+            <div>{{ 'imagerie' | translate }}</div>
+            <div>{{ 'devis-dde' | translate }}</div>
+        </div>
+        <div>
+            <div>TALIA {{ 'type-talia' | translate }}</div>
+            <div class="soft">{{ 'descr-talia' | translate }}</div>
+            <div><img alt="ttaz" src="../../assets/images/radio-talia.png"/></div>
+            <div>
+                <button (click)="openCode('')">{{ 'devis-dde' | translate }}</button>
+            </div>
+        </div>
+        <div>
+            <div>TTAZ {{ 'type-ttaz' | translate }}</div>
+            <div class="soft">{{ 'descr-ttaz' | translate }}</div>
+            <div><img alt="ttaz" src="../../assets/images/ttaz.png"/></div>
+            <div>
+                <button (click)="openCode('pres-ttaz')">{{ 'devis-dde' | translate }}</button>
+            </div>
+        </div>
+        <div>
+            <div>IVLS 345 {{ 'type-ivls' | translate }}</div>
+            <div class="soft">{{ 'descr-ivls' | translate }}</div>
+            <div>
+                <img alt="ivls" src="../../assets/images/ivls.png"/>
+                <img alt="ivls" src="../../assets/images/radio-ivls.png"/>
+            </div>
+            <div>
+                <button (click)="openCode('pres-ivls')">{{ 'devis-dde' | translate }}</button>
+            </div>
+        </div>
+        <div>
+            <div>DAP2 {{ 'type-dap' | translate }}</div>
+            <div class="soft">{{ 'descr-dap' | translate }}</div>
+            <div></div>
+            <div>
+                <button (click)="openCode('pres-dap')">{{ 'devis-dde' | translate }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="enterKey" class="code-container">
+    <div class="code">
+        <div class="close" (click)="close()">X</div>
+        <div>
+            {{ "entrer-cle" | translate }}
+        </div>
+        <input type="text" />
+        <button (click)="openPdf()">OK</button>
+    </div>
+</div>
+
+

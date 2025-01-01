@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fond rond bleu -->
+  <circle cx="100" cy="100" r="100" fill="#29518C" />
+  
+  <!-- Croix diagonale blanche -->
+  <line x1="40" y1="40" x2="160" y2="160" stroke="white" stroke-width="20" />
+  <line x1="40" y1="160" x2="160" y2="40" stroke="white" stroke-width="20" />
+</svg>

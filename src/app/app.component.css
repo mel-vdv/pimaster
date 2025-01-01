@@ -1,0 +1,49 @@
+:root {
+    --lightblue: #6091CC;
+    --darkblue: #29518C;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Pragmatica", sans-serif;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Pragmatica";
+    src: url("../assets/polices/Pragmatica_Bold.otf") format('OpenType');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pragmatica soft";
+    src: url("../assets/polices/Pragmatica.ttf") format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.langages {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+img[alt='french'], img[alt='english'], img[alt='nederlands'] {
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+    border: 1px white solid;
+}
+@media screen and (max-width: 600px) {
+    img[alt='french'], img[alt='english'], img[alt='nederlands'] {
+        height: 20px;
+        margin-right: 10px;
+    }
+}
