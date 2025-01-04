@@ -45,7 +45,7 @@ img[alt="web"], img[alt="maps"] {
 }
 img[alt="maps"] {
     position: relative;
-    right: 3px;
+    right: 5px;
 }
 .displ-flex {
     display: flex;
