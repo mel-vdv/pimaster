@@ -31,13 +31,28 @@ img[alt='logo primaster'] {
     text-align: left;
     margin-left: 100px;
     font-size: 22px;
-    .small {
+    .small, small {
         font-size: 14px;
     }
 
 }
 .coordonnees > div:nth-child(2), .coordonnees > div:nth-child(3) {
     font-size: 18px;
+}
+img[alt="web"], img[alt="telefon"], img[alt="maps"] {
+    width: 30px;
+    margin-right: 10px;
+}
+img[alt="telefon"] {
+    width: 20px;
+}
+img[alt="maps"] {
+    position: relative;
+    right: 3px;
+}
+.displ-flex {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 601px) {
@@ -69,6 +84,11 @@ img[alt='logo primaster'] {
         border-radius: 15px;
         background-color: #6091CC;
         color: white;
+        img {
+            height: 20px;
+            width: auto;
+            margin-left: 10px;
+        }
     }
     .coordonnees  div, .coordonnees div div.small {
         font-size: 16px !important;
@@ -80,5 +100,12 @@ img[alt='logo primaster'] {
             margin-top: 0;
 
         }
+    }
+}
+
+a {
+    all: unset;
+    &:hover {
+        text-decoration: underline;
     }
 }

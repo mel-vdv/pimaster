@@ -3,7 +3,9 @@
     "chirurgie-ortho": "Orthopedic surgery",
     "arthroscopie": "Arthroscopy",
     "chir-neuro": "Neurological surgery",
-    "consultation-chez": "Consultation at BEVET veterinary clinic in WANZE",
+    "consultation-chez": "Consultation at : BEVET veterinary clinic in WANZE",
+    "lien-vers-site": "Link to the firm's website",
+    "lien-vers-maps": "Google Maps link",
     
     "accueil": "Home",
     "resume": "Resume",
@@ -57,8 +59,8 @@
     
     "type": "Type",
     "description": "Method",
-    "imagerie": "Imagerie",
-    "devis-dde": "Devis sur demande",
+    "imagerie": "Imagery",
+    "devis-dde": "Quote on request",
     "legacy": "Legal notices",
 
     "type-talia": "TTA all in one plating system",

@@ -3,7 +3,9 @@
     "chirurgie-ortho": "Chirurgie orthopédique",
     "arthroscopie": "Arthroscopie",
     "chir-neuro": "Chirurgie neurologique",
-    "consultation-chez": "Consultation chez Clinique vétérinaire BEVET à WANZE",
+    "consultation-chez": "Consultation chez : Clinique vétérinaire BEVET à WANZE",
+    "lien-vers-site": "Lien vers le site web du cabinet",
+    "lien-vers-maps": "Lien Google Maps",
 
     "accueil": "Accueil",
     "resume": "Parcours",
@@ -37,7 +39,7 @@
     "cblo": "Ostéotomie de Nivellement Basée sur le CORA",
 
     "conferences": "Conférences",
-    "maidnspeech": "Maidnspeech Pierre MATHIEU",
+    "maidnspeech": "Maiden speech Pierre MATHIEU",
     "de-la-douleur-a-la-paralysie": "De la douleur à la paralysie",
     "choix-raisonne": "Choix raisonné d'une technique chirurgicale en cas de RLCA (rupture des ligaments croisés antérieurs)",
     "ortho-ou-neuro": "Orthopédique ou neurologique ?",
@@ -48,7 +50,7 @@
     "form-contact": "Formulaire de contact",
     "nom": "Nom",
     "prenom": "Prénom",
-    "tel": "Tél",
+    "tel": "Téléphone",
     "email": "Adresse email",
     "message": "Veuillez saisir votre message",
     "trop-court": "Veuillez saisir minimum 5 caractères",

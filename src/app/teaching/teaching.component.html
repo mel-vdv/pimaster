@@ -1,8 +1,8 @@
 <div class="container">
     <div class="teaching-container">
         <div class="main">{{ "conferences" | translate }}</div>
-        <div (mouseover)="changeResumeVis(1)"> 
-            <div>{{ "de-la-douleur-a-la-paralysie" | translate }} 
+        <div> 
+            <div (mouseover)="changeResumeVis(1)">{{ "de-la-douleur-a-la-paralysie" | translate }} 
                 <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(1)" *ngIf="resumeVisible !== 1">
                 <div class="resume" *ngIf="resumeVisible === 1">
                     <p>{{ 'resume-paralysie-a' | translate }}</p>
@@ -15,8 +15,8 @@
                 <button (click)="openCode()">{{ 'acces-reserve' | translate }}</button>
             </div>
         </div>
-        <div (mouseover)="changeResumeVis(2)">   
-            <div>{{ "choix-raisonne" | translate }}
+        <div>   
+            <div (mouseover)="changeResumeVis(2)">{{ "choix-raisonne" | translate }}
                 <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(2)" *ngIf="resumeVisible !== 2">
                 <div class="resume" *ngIf="resumeVisible === 2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur quia delectus natus asperiores quaerat odit aspernatur doloribus impedit qui ducimus sed ipsum, ipsa numquam sit, deleniti praesentium nesciunt accusantium nulla quod est suscipit alias, id tenetur. Nulla voluptas dolor quae magnam saepe tempora, eius similique, amet facilis assumenda obcaecati exercitationem aspernatur, placeat quisquam culpa eos harum error at. Aliquid ducimus natus accusantium temporibus porro impedit, quo ipsam aspernatur cupiditate a fuga? Minima cupiditate perferendis, fugit ea eaque cumque ipsam libero veritatis, porro quisquam nostrum ut tempora quaerat a temporibus! Velit odit ipsam quis dolorum doloribus labore quam, minus blanditiis?
@@ -26,8 +26,8 @@
                 <button (click)="openCode()">{{ 'acces-reserve' | translate }}</button>
             </div>
         </div>
-        <div (mouseover)="changeResumeVis(3)">
-            <div>{{ "ortho-ou-neuro" | translate }}
+        <div>
+            <div (mouseover)="changeResumeVis(3)">{{ "ortho-ou-neuro" | translate }}
                 <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(3)" *ngIf="resumeVisible !== 3">
                 <div class="resume" *ngIf="resumeVisible === 3">
                     <p>{{ 'resume-ortho-a' | translate }}</p>
@@ -41,8 +41,8 @@
                 <button (click)="openCode()">{{ 'acces-reserve' | translate }}</button>
             </div>
         </div>
-        <div (mouseover)="changeResumeVis(4)">
-            <div>{{ "Anti-inflammatoires-antalgiques" | translate }}
+        <div>
+            <div (mouseover)="changeResumeVis(4)">{{ "Anti-inflammatoires-antalgiques" | translate }}
                 <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(4)" *ngIf="resumeVisible !== 4">
                 <div class="resume" *ngIf="resumeVisible === 4">
                      <p>{{ 'resume-infl-a' | translate }}</p>
@@ -54,8 +54,8 @@
                 <button (click)="openCode()">{{ 'acces-reserve' | translate }}</button>
             </div>
         </div>
-        <div (mouseover)="changeResumeVis(5)">
-            <div>{{ "maidnspeech" | translate }}
+        <div>
+            <div (mouseover)="changeResumeVis(5)">{{ "maidnspeech" | translate }}
                 <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(5)" *ngIf="resumeVisible !== 5">
                 <div class="resume" *ngIf="resumeVisible === 5">
                      <p>{{ 'resume-pm-a' | translate }}</p>

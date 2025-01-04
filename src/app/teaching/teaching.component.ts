@@ -26,7 +26,7 @@ export class TeachingComponent implements OnInit {
   }
 
   changeResumeVis(nb: number) { 
-    this.resumeVisible = nb;
+    this.resumeVisible = this.resumeVisible === nb ? 0 : nb;
   }
 
 }
