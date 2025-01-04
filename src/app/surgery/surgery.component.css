@@ -7,10 +7,10 @@
 }
 .tables-container {
     display: flex;
-    width: min(100vw, 900px);
+    width: min(100vw, 1200px);
 }
 .bloc {
-    width: 300px;
+    width: min(100vw, 400px);
     margin: 10px 5px;
     border-radius: 5px;
     box-shadow: 0 0 7px rgb(88, 87, 87);
@@ -38,13 +38,13 @@
     color: #29518C;
     text-align: center;
     width: 33%;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 5px;
     border-right: #29518C 2px solid;
 }
 .droite {
     width: 66%;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: normal;
     color: rgba(39, 36, 36, 0.692);
 }

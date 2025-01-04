@@ -6,7 +6,7 @@
     background-color: white;
 }
 .teaching-container {
-    width: min(900px,100vw);
+    width: min(1200px,100vw);
     height: 80vh;
     display: block;
     overflow-y: scroll;
@@ -22,22 +22,24 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    box-sizing: border-box;
     width: 100%;
 }
 .teaching-container > div.main {
     color: white;
     background-color: #6091CC;
     text-transform: uppercase;
-    width: 90%;
+    width: 95%;
+    font-size: 20px;
     justify-self: center;
     border-radius: 0 0 5px 5px;
 }
 .teaching-container > div > div:first-child {
     border-bottom: 1px solid #6091CC;
-    font-size: 12px;
+    font-size: 18px;
     justify-content: start;
     align-items: center;
-    width: 85%;
+    width: 80%;
     color: #29518C;
     margin-left: 2px;
     &:hover {
@@ -49,24 +51,28 @@
     
     .resume {
         color: grey;
-        font-size: 8px;
+        font-size: 14px;
     }
 }
 .teaching-container > div > div.restrictAccess {
-    width: 15%;
+    width: 20%;
     button {
         all: unset;
+        box-sizing: border-box;
+        width: 100%;
         background-color: #6091CC;
         color: white;
         text-align: center;
         padding: 30px;
-        border-radius: 3px;
-        font-size: 10px;
+        border-radius: 5px;
         &:hover {
             background-color: #29518C;
         }
     }
 }
+
+
+
 .code-container {
     background-color:rgba(0,0,0,0.6);
     position: fixed;
@@ -83,7 +89,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 18px;
 }
 .code > div {
     margin-bottom: 20px;
@@ -94,7 +100,7 @@
     border-radius: 100%;
     justify-self: right;
     padding: 2px;
-    font-size: 12px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +130,16 @@ img[alt='loupe']{
     border-radius: 3px;
     padding: 5px;
 }
+@media screen and (max-width: 1200px) {    
+    img[alt='loupe'] {
+        display: inline-block;
+        height: 20px;
+        width: auto;
+        margin-left: 10px;
+        position: relative;
+        top: 5px;
+    }   
+}
 @media screen and (max-width:600px) {
     .teaching-container {
         overflow-y: scroll;
@@ -148,12 +164,6 @@ img[alt='loupe']{
     .resume, 
     .close {
         font-size: 18px !important;
-    }
-    img[alt='loupe'] {
-        display: inline-block;
-        height: 20px;
-        width: auto;
-        margin-left: 10px;
     }
     .teaching-container > div.main {
         letter-spacing: 2px;

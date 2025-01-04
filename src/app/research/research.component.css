@@ -9,7 +9,7 @@
 }
 .rech-container {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    width: min(100vw, 900px);
+    width: min(100vw, 1200px);
     display: block;
     overflow: hidden;
     overflow-y: scroll;
@@ -36,17 +36,18 @@
     text-transform: uppercase;
     width: 100%;
     border-radius: 0 0 5px 5px;
-    border-bottom: none;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 10px;
+}
+.rech-container > div.main > div {
+    border-bottom: none;
 }
 .rech-container > div > div:nth-child(1),
 .rech-container > div > div:nth-child(2),
 .rech-container > div > div:nth-child(3),
 .rech-container > div > div:nth-child(4) {
-    flex: 0 0 25%;
-    max-width: 20%;
-    font-size: 10px;
+    width: 20%;
+    font-size: 16px;
     color: rgb(88,87,87) !important;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -64,19 +65,24 @@
     justify-self: center;
     background-color: #6091CC;
     color: white;
-    border-radius: 3px;
-    font-size: 9px;
-    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
 
     &:hover {
         background-color: #29518C;
     }
 }
-
-.rech-container > div > div:nth-child(2) {
-    font-size: 6px !important;
+.rech-container > div:not(.main) > div:nth-child(2) {
+    font-size: 14px !important;
+    text-align: left;
+    border-left: 0.6px solid gray;
+    border-right: 0.6px solid gray;
 }
-
+.rech-container > div > div:nth-child(1) {
+    color: #29518C !important;
+    text-align: left;
+}
 .rech-container > div.main > div {
     color: white !important;
     display: flex;
@@ -144,3 +150,23 @@ img {
     border-radius: 3px;
     padding: 5px;
 }
+@media screen and (max-width: 900px) {
+ .rech-container > div {
+    flex-direction: column;
+    margin: 20px 0;
+ }
+ .rech-container > div > div {
+    width: 100% !important;
+    border: none;
+
+ }
+ .rech-container > div.main {
+    display: none;
+ }
+ .rech-container > div > div > button {
+    margin: 10px 0 !important;
+ }
+ .rech-container > div > div:nth-child(4) {
+    border-bottom: 2px solid #6091CC;
+ }
+} 

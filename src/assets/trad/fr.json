@@ -57,7 +57,7 @@
     "required": "Ce champ est requis",
 
     "type": "Type",
-    "description": "Description de la Méthode",
+    "description": "Méthode",
     "imagerie": "Imagerie",
     "devis-dde": "Devis sur demande",
 
@@ -113,7 +113,7 @@
     "rgpd-p6f": "Opposition au traitement, notamment à des fins de prospection.",
     "rgpd-p6g": "Portabilité de vos données.",
     "rgpd-p6h": "Retrait de votre consentement à tout moment.",
-    "rgpd-p6i": "Pour exercer vos droits, veuillez nous contacter à : **********",
+    "rgpd-p6i": "Pour exercer vos droits, veuillez nous contacter à : ",
 
     "rgpd-h7": "Cookies",
     "rgpd-p7a": "Nous n'utilisons pas de cookies.",
@@ -123,7 +123,7 @@
 
     "rgpd-h9": "Contact",
     "rgpd-p9a": "Pour toute question ou demande concernant notre Politique de confidentialité, vous pouvez nous contacter à :",
-    "rgpd-p9b": "E-mail : ********",
+    "rgpd-p9b": "E-mail : ",
 
     "menu": "Menu",
 

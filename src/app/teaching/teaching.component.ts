@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
+import { setTimeout } from 'timers';
 
 @Component({
   selector: 'app-teaching',
@@ -9,7 +11,7 @@ export class TeachingComponent implements OnInit {
 
   constructor() { }
 
-  resumeVisible = 0;
+  resumeVisible?: number;
   enterKey:boolean = false;
 
   ngOnInit(): void {
@@ -23,7 +25,7 @@ export class TeachingComponent implements OnInit {
     this.enterKey = false;
   }
 
-  changeResumeVis(nb: number) {
+  changeResumeVis(nb: number) { 
     this.resumeVisible = nb;
   }
 

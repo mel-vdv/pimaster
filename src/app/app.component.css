@@ -36,12 +36,17 @@ body {
     right: 10px;
 }
 img[alt='french'], img[alt='english'], img[alt='nederlands'] {
-    height: 15px;
+    height: 25px;
     width: auto;
-    margin-right: 5px;
+    margin-right: 10px;
     border: 1px white solid;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) and (min-width: 731px) {
+    .langages {
+        top: 5px;
+    }
+}
+@media screen and (max-width: 730px) {
     img[alt='french'], img[alt='english'], img[alt='nederlands'] {
         height: 20px;
         margin-right: 10px;

@@ -56,7 +56,7 @@
     "required": "Dit veld is verplicht",
 
     "type": "Soort",
-    "description": "Beschrijving van de methode",
+    "description": "Methode",
     "imagerie": "Beeldvorming",
     "devis-dde": "Offerte op aanvraag",
     "legacy": "Juridische mededelingen",

@@ -5,7 +5,7 @@
     background-color: #29518C;
     display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -16,7 +16,7 @@ a {
     color: white;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,11 +27,19 @@ a:hover, div.selected a {
     color: #29518C;
 }
 a > img {
-    height: 11px;
-    margin-left: 5px;
+    height: 20px;
+    margin-left: 8px;
+}
+@media screen and (min-width: 801px) and (max-width:1250px) {
+    a {
+        padding: 10px 15px;
+    }
+    .container-navig {
+        height: 100px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .container-navig {
         display: none;
     }
@@ -41,6 +49,7 @@ a > img {
         display: block;
     }
     .hamburger {
+        font-size: 20px;
         padding: 12px;
         color: white; 
         display: flex;
@@ -53,7 +62,6 @@ a > img {
         flex-direction: column;
     }
     a {
-        font-size: 18px;
         text-transform: uppercase;
     }
     a > img {

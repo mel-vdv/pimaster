@@ -17,11 +17,12 @@
     display: none;
 }
 h2 {
-    font-size: 12px;
+    font-size: 20px;
     text-transform: uppercase;
     text-decoration: underline;
 }
 p {
-    font-family: 'Pragmatica-soft';
-    font-size: 10px;
+    font-family: 'Pragmatica';
+    font-size: 18px;
+    color: rgb(78, 77, 77);
 }

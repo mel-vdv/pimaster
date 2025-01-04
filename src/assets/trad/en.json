@@ -56,7 +56,7 @@
     "required": "This field is required",
     
     "type": "Type",
-    "description": "Description of the method",
+    "description": "Method",
     "imagerie": "Imagerie",
     "devis-dde": "Devis sur demande",
     "legacy": "Legal notices",
