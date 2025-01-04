@@ -82,6 +82,7 @@
 .rech-container > div > div:nth-child(1) {
     color: #29518C !important;
     text-align: left;
+    word-break: break-all;
 }
 .rech-container > div.main > div {
     color: white !important;
