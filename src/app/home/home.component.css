@@ -39,12 +39,9 @@ img[alt='logo primaster'] {
 .coordonnees > div:nth-child(2), .coordonnees > div:nth-child(3) {
     font-size: 18px;
 }
-img[alt="web"], img[alt="telefon"], img[alt="maps"] {
+img[alt="web"], img[alt="maps"] {
     width: 30px;
     margin-right: 10px;
-}
-img[alt="telefon"] {
-    width: 20px;
 }
 img[alt="maps"] {
     position: relative;
