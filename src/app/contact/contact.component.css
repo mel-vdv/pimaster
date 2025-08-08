@@ -1,0 +1,129 @@
+.container {
+    height: 85vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#notif {
+    padding: 10px;
+    color: #29518C;
+    box-sizing: border-box;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container-form {
+    width: 900px;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+.moitie {
+    width: 100%
+}
+.moitie > div {
+    margin-bottom: 20px;
+}
+.container-form > div > div {
+    width: 100%;
+}
+.titre {
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-color: #6091CC;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0  0 5px 5px;
+}
+label {
+    font-size: 17px;
+    color: gray;
+}
+input, textarea {
+    font-size: 17px;
+    all: unset;
+    width: 90%;
+    border-radius: 5px;
+    border-color: white !important;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    padding: 0 10px;
+    color: #29518C;
+    &:-webkit-autofill {
+        -webkit-text-fill-color: #29518C;
+    }
+}
+textarea {
+    height: 200px;
+    padding: 10px;
+    &::placeholder {
+        font-size: 17px;
+    }
+}
+button {
+    all: unset;
+    display: flex;
+    color: white;
+    background-color:#29518C;
+    padding: 10px;
+    border-radius: 5px;
+    &:disabled {
+        background-color:  #6091CC;
+        &:hover {
+            border: #6091CC 1px solid;
+        }
+    }
+}
+small {
+    color: rgb(167, 40, 40);
+    font-size: 15.5px;
+}
+img {
+    width: 20px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 899px) {
+    .container {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+    .container-form {
+        margin: auto;
+        padding: 0;
+        width: 95vw;
+        box-shadow: none;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        font-size: 18px;
+        width: 95vw !important;
+        box-sizing: border-box;
+    }
+    label, textarea::placeholder, small {
+        font-size: 18px;
+    }
+    .moitie {
+        width: 100%;
+    }
+    .moitie > div {
+        margin-bottom: 0;
+    }
+    button {
+        width: 95%;
+        justify-content: center;
+    }
+}

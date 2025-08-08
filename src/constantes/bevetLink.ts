@@ -1,0 +1,1 @@
+export const BEVET_LINK = "https://bevet.be";

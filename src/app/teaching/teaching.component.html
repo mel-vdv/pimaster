@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="teaching-container">
+        <div class="main">{{ "conferences" | translate }}</div>
+        <div> 
+            <div (mouseover)="changeResumeVis(1)">
+                <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(1)" *ngIf="resumeVisible !== 1">
+                {{ "de-la-douleur-a-la-paralysie" | translate }} 
+                <div class="resume" *ngIf="resumeVisible === 1">
+                    <img src="assets/images/close.svg" alt="close" (click)="changeResumeVis(0)">
+                    <p>{{ 'resume-paralysie-a' | translate }}</p>
+                    <p>{{ 'resume-paralysie-b' | translate }}</p>
+                    <p>{{ 'resume-paralysie-c' | translate }}</p>
+                    <p>{{ 'resume-paralysie-d' | translate }}</p>
+                </div>
+            </div>
+            <div class="restrictAccess">
+                <!--<button (click)="getManyPdf(
+                    [
+                        'conf/neuro/1 BASES HISTO PHYSIO ANAT',
+                        'conf/neuro/2 CONCEPTS THEORIQUES',
+                        'conf/neuro/3 AFFECTIONS SNP',
+                        'conf/neuro/4 AFFECTIONS SNC CRANIAL',
+                        'conf/neuro/5 AFFECTIONS SNC MEDULLAIRE',
+                        'conf/neuro/7 LES GRANDS SYNDROMES',
+                        'conf/neuro/8 L\'OEIL ET LA NEURO',
+                        'conf/neuro/9 L\'OREILLE ET LA NEURO'
+                    ])">
+                    {{ 'acces-conf' | translate }}
+                </button>-->
+                <button (click)="openCode('')">{{ 'acces-reserve' | translate }}</button>
+            </div>
+        </div>
+        <div>   
+            <div (mouseover)="changeResumeVis(2)">
+                <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(2)" *ngIf="resumeVisible !== 2">
+                {{ "choix-raisonne" | translate }}
+                <div class="resume" *ngIf="resumeVisible === 2">
+                    <img src="assets/images/close.svg" alt="close" (click)="changeResumeVis(0)">
+                    <p>{{ 'resume-ligament-a' | translate }}</p>
+                    <p>{{ 'resume-ligament-b' | translate }}</p>
+                </div>
+            </div>
+            <div class="restrictAccess">
+                <button (click)="openCode('')">{{ 'acces-reserve' | translate }}</button>
+                <!--<button (click)="openPdfDirect('conf/Cursus RLCA')">{{ 'acces-conf' | translate }}</button>-->
+            </div>
+        </div>
+        <div>
+            <div (mouseover)="changeResumeVis(3)">
+                <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(3)" *ngIf="resumeVisible !== 3">
+                {{ "ortho-ou-neuro" | translate }}
+                <div class="resume" *ngIf="resumeVisible === 3">
+                    <img src="assets/images/close.svg" alt="close" (click)="changeResumeVis(0)">
+                    <p>{{ 'resume-ortho-a' | translate }}</p>
+                    <p>{{ 'resume-ortho-b' | translate }}</p>
+                    <p>{{ 'resume-ortho-c' | translate }}</p>
+                    <p>{{ 'resume-ortho-d' | translate }}</p>
+                    <p>{{ 'resume-ortho-e' | translate }}</p>
+                </div>
+            </div>
+            <div class="restrictAccess">
+                <!--<button (click)="openPdfDirect('')">{{ 'acces-conf' | translate }}</button>-->
+                <button (click)="openCode('')">{{ 'acces-reserve' | translate }}</button>
+            </div>
+        </div>
+        <div>
+            <div (mouseover)="changeResumeVis(4)">
+                <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(4)" *ngIf="resumeVisible !== 4">
+                {{ "Anti-inflammatoires-antalgiques" | translate }}
+                <div class="resume" *ngIf="resumeVisible === 4">
+                    <img src="assets/images/close.svg" alt="close" (click)="changeResumeVis(0)">
+                     <p>{{ 'resume-infl-a' | translate }}</p>
+                     <p>{{ 'resume-infl-b' | translate }}</p>
+                     <p>{{ 'resume-infl-c' | translate }}</p>
+                </div>
+            </div>
+            <div class="restrictAccess">
+                <!--<button (click)="openPdfDirect('conf/AIS AINS MORPHINIQUES, meme combat')">{{ 'acces-conf' | translate }}</button>-->
+                <button (click)="openCode('')">{{ 'acces-reserve' | translate }}</button>
+            </div>
+        </div>
+        <!--
+        <div>
+            <div (mouseover)="changeResumeVis(5)">
+                <img src="./../../assets/images/loupe-blue.svg" alt="loupe" (click)="changeResumeVis(5)" *ngIf="resumeVisible !== 5">
+                {{ "maidnspeech" | translate }}
+                <div class="resume" *ngIf="resumeVisible === 5">
+                    <img src="assets/images/close.svg" alt="close" (click)="changeResumeVis">
+                     <p>{{ 'resume-pm-a' | translate }}</p>
+                     <p>{{ 'resume-pm-b' | translate }}</p>
+                     <p>{{ 'resume-pm-c' | translate }}</p>
+                     <p>{{ 'resume-pm-d' | translate }}</p>
+                </div>
+            </div>
+            <div class="restrictAccess">
+                <button (click)="getManyPdf(['conf/Parcours de vie', 'conf/Il soignait, version complete']);">{{ 'acces-conf' | translate }}</button>
+            </div>
+        </div>
+    -->
+    </div>
+</div>
+<!-------------------------------------------------------------------------------------->
+<div *ngIf="enterKey" class="modale-container">
+    <div class="modale">
+        <div class="close" (click)="close('key')">X</div>
+        <div>
+            {{ "entrer-cle" | translate }}
+        </div>
+        <input type="text" #mdpInput>
+        <p class="error" *ngIf="mdpCorrect === 2">{{ 'key-error' | translate }}</p>
+        <button (click)="openPdfCle(mdpInput.value)">OK</button>
+    </div>
+</div>
+<!-------------------------------------------------------------------------------------->
+<div *ngIf="isManyPDF" class="modale-container">
+    <div class="modale">
+        <div class="close" (click)="close('manyPdf')">X</div>
+        <div class="pdf" (click)="openPdfDirect(pdf)" *ngFor="let pdf of manyPdf">
+            {{pdf | nomPdf }} 
+        </div>
+    </div>
+</div>
+

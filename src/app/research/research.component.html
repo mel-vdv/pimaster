@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="rech-container">
+        <div class="titres">
+            <div class="type">{{ 'type' | translate }}</div>
+            <div class="descr">{{ 'description' | translate }}</div>
+            <div class="images">{{ 'imagerie' | translate }}</div>
+            <div class="boutons">{{ 'devis-dde' | translate }}</div>
+        </div>
+        <div class="technique">
+            <div class="type">IVLS 345 {{ 'type-ivls' | translate }}</div>
+            <div class="soft descr">{{ 'descr-ivls' | translate }}</div>
+            <div class="images">
+                <img alt="ivls" src="../../assets/images/ivls.png"/>
+                <img alt="ivls" src="../../assets/images/radio-ivls.png"/>
+            </div>
+            <div class="boutons">
+                <button (click)="openPdfDirect('PC/pres-ivls')">{{ 'procedure-chir' | translate }}</button>
+                <button (click)="openCode('tarifs/IVLS 3 Series tarifs')">{{ 'tarif' | translate }} IVLS 3</button>
+                <button (click)="openCode('tarifs/IVLS 4 Series tarifs')">{{ 'tarif' | translate }} IVLS 4</button>
+                <button (click)="openCode('tarifs/IVLS 5 Series tarifs')">{{ 'tarif' | translate }} IVLS 5</button>
+            </div>
+        </div>
+        <div class="technique">
+            <div class="type">DAP2 {{ 'type-dap' | translate }}</div>
+            <div class="soft descr">{{ 'descr-dap' | translate }}</div>
+            <div class="images"></div>
+            <div class="boutons">
+                <button (click)="openCode('PC/pres-dap')">{{ 'procedure-chir' | translate }}</button>
+                <!--<button (click)="openCode('grille-tarifaire')">{{ 'tarif' | translate }}</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------------------------------------->
+<div *ngIf="enterKey" class="code-container">
+    <div class="code">
+        <div class="close" (click)="close()">X</div>
+        <div>
+            {{ "entrer-cle" | translate }}
+        </div>
+        <input type="text" #mdpInput>
+        <p class="error" *ngIf="mdpCorrect === 2">{{ 'key-error' | translate }}</p>
+        <button (click)="openPdfCle(mdpInput.value)">OK</button>
+    </div>
+</div>
+
+

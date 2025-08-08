@@ -1,0 +1,30 @@
+.container {
+    background-color: white;
+    color: rgb(49, 48, 48);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rgpd {
+    display: block;
+    height: calc(100% - 15vh);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: min(100vw, 600px);
+    margin: 0 5px;
+    scrollbar-width: none;
+}
+.rgpd::-webkit-scrollbar {
+    display: none;
+}
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+p {
+    font-family: 'Pragmatica';
+    font-size: 18px;
+    color: rgb(78, 77, 77);
+}

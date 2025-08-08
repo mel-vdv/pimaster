@@ -1,0 +1,215 @@
+.container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.teaching-container {
+    width: min(1200px,100vw);
+    height: 80vh;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    background-color: white;
+    scrollbar-width: none;
+}
+.teaching-container::-webkit-scrollbar {
+    display: none;
+}
+.teaching-container > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.teaching-container > div.main {
+    color: white;
+    background-color: #6091CC;
+    text-transform: uppercase;
+    width: 95%;
+    font-size: 20px;
+    justify-self: center;
+    border-radius: 0 0 5px 5px;
+}
+.teaching-container > div > div:first-child {
+    border-bottom: 1px solid #6091CC;
+    font-size: 18px;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    color: #29518C;
+    margin-left: 2px;
+    &:hover {
+        padding-left: 10px;
+        background-color: rgba(0,0,0,0.05);
+        border-radius: 0 4px 4px 0;
+        border-left: 5px solid #29518C;
+    }
+    
+    .resume {
+        color: grey;
+        font-size: 14px;
+    }
+}
+.teaching-container > div > div.restrictAccess {
+    width: 20%;
+    button {
+        all: unset;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #6091CC;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        border-radius: 5px;
+        &:hover {
+            background-color: #29518C;
+        }
+    }
+}
+/***********************************************/
+.modale-container {
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modale {
+        max-height: 100vh; overflow-y: scroll;scrollbar-width: none;
+        color: #29518C;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .close {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            justify-self: right;
+            padding: 2px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                color: white;
+                background-color: #29518C;
+            }
+        }
+        > div {
+            margin-bottom: 20px;
+        }
+        .pdf {
+            padding: 15px;
+            border-radius: 5px;
+            
+            @media screen and (max-width:600px) {
+                padding: 5px 0;
+                font-size: 16px;
+            }
+            &:hover {
+                color: white;
+                background-color: #29518C;
+            }
+        }
+        input {
+            all: unset;
+            border: 1px #29518C solid;
+            border-radius: 3px;
+            padding: 5px;
+        }
+        button {
+            all: unset;
+            background-color: #29518C;
+            color: white;
+            border-radius: 3px;
+            padding: 5px;
+            margin-left: 5px;
+            &:hover {
+                background-color: #6091CC;
+                color: #29518C;
+            }
+        }
+    }
+}
+/*************************************************/
+        img[alt='loupe']{
+            display: none;
+        }
+        img[alt='close'] {
+            display: none;
+        }
+
+/***********************************************/
+@media screen and (max-width: 1200px) {    
+    img[alt='loupe'] {
+        display: inline-block;
+        height: 20px;
+        width: auto;
+        margin-left: 4px;
+        position: relative;
+        top: 5px;
+    }   
+}
+@media screen and (max-width:600px) {
+    .container {
+        height: 85%;
+    }
+    .teaching-container {
+        overflow-y: scroll;
+        height: 100%;
+        display: block;
+    }
+    .teaching-container > div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px gray solid;
+    }
+    .teaching-container > div > div:first-child {
+        border-bottom: none;
+    }
+    .teaching-container > div > div:first-child:hover {
+        border-left: none;
+        background-color: white;
+    }
+    .teaching-container > div > div, 
+    .teaching-container > div > div.restrictAccess > button,
+    .resume, 
+    .close {
+        font-size: 18px !important;
+    }
+    .teaching-container > div.main {
+        letter-spacing: 2px;
+    }
+    .teaching-container > div > div.restrictAccess {
+        width: 50vw;
+        box-sizing: border-box;
+        button {
+            box-sizing: border-box;
+            margin-top: 5px;
+            width: 100%;
+            padding: 15px;
+        }
+    }
+    img[alt='close'] {
+        display: block;
+        height: 20px;
+        width: auto;
+        position: relative;
+        top: 10px;
+    }
+}

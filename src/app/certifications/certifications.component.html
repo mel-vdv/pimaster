@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="certif-container">
+        <div (click)="openPdf('certif/certif-neuromed')" (mouseover)="certifHover = 1" (mouseleave)="certifHover = 0">
+            {{ 'neuromed'| translate}}
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 1 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-neuromed.png">
+            </div>
+        </div>
+        <div (click)="openPdf('certif/certif-ILOC')" (mouseover)="certifHover = 2" (mouseleave)="certifHover = 0">
+            ILOC
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 2 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-i-loc.png">
+            </div>
+        </div>
+        <div (click)="openPdf('certif/certif-TPLO')" (mouseover)="certifHover = 3" (mouseleave)="certifHover = 0">
+            TPLO
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 3 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-TPLO.png">
+            </div>
+        </div>
+        <div (click)="openPdf('certif/certif-ESAVS')" (mouseover)="certifHover = 4" (mouseleave)="certifHover = 0">
+            ESAVS
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 4 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-ESAVS.png">
+            </div>
+        </div>
+        
+        <div (click)="openPdf('certif/certif-DFO-PTO')" (mouseover)="certifHover = 5" (mouseleave)="certifHover = 0">
+            DFO/PTO/MAMAMIA
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 5 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-DFO-PTO.png">
+            </div>
+        </div>
+
+         <div (click)="openPdf('certif/certif-radio')" (mouseover)="certifHover = 6" (mouseleave)="certifHover = 0">
+            Radioprotection
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 6 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-radio.png">
+            </div>
+        </div>
+
+         <div (click)="openPdf('certif/certif-AFVAC18')" (mouseover)="certifHover = 7" (mouseleave)="certifHover = 0">
+            18e cours AFVAC
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 7 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-AFVAC18.png">
+            </div>
+        </div>
+
+         <div (click)="openPdf('certif/certif-ECVS')" (mouseover)="certifHover = 8" (mouseleave)="certifHover = 0">
+            Fusion Implants (ECVS)
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 8 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-ECVS.png">
+            </div>
+        </div>
+
+         <div (click)="openPdf('certif/certif-34e-scientific-meeting')" (mouseover)="certifHover = 9" (mouseleave)="certifHover = 0">
+            34e scientific meeting (ECVS)
+            <div class="cadre">
+                <img alt="loupe" src="assets/images/loupe-blue.svg" *ngIf="certifHover === 9 || !isDesktop">
+                <img alt="certificat" src="assets/images/certif-34e-scientific-meeting.png">
+            </div>
+        </div>
+    </div>
+</div>

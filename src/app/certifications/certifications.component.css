@@ -1,0 +1,40 @@
+.container {
+    width: 90vw;
+    margin: auto;
+    height: 85%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    scrollbar-width: none;
+}
+.certif-container{
+    width: min(100%, 1450px);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    
+    > div {
+        font-size: 25px;
+        margin: 20px;
+        color: #29518C;
+        text-align: center;
+        width: min( 90vw, 250px);
+        .cadre {
+            position: relative;
+            img[alt='certificat'] {
+                width: 100%;
+                border: #29518C 1px solid;
+            }
+            img[alt='loupe'] {
+                width: 30%;
+                position: absolute;
+                top: 35%;
+                left: 35%;
+            }
+        }
+    }
+}

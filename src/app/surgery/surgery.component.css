@@ -1,0 +1,139 @@
+.container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    
+    overflow-y: scroll;
+    scrollbar-width: none;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .tables-container {
+        display: flex;
+        flex-direction: row;
+        width: min(100vw, 1600px);
+
+        @media screen and (max-width: 600px) { 
+            flex-direction: column; align-items: center;
+        }
+        
+        .bloc:nth-child(1) {
+            width: min(95vw, 600px);
+        }
+        .bloc {
+            width: min(95vw, 400px);
+            height: fit-content;
+            box-sizing: border-box;
+            margin: 10px 5px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 7px rgb(88, 87, 87); display: block;
+
+            .themes {
+                width: auto;
+                text-transform: uppercase;
+                background-color: #6091CC;
+                color: white;
+                border-radius: 5px 5px 0 0;
+                border-bottom: #29518C 3px solid;
+                text-align: center;
+                padding: 15px 0;
+            }
+            .sous-themes {
+                display: flex;
+                width: 100%;
+                @media screen and (max-width: 600px) { font-size: 18px;}
+
+                &:not(:last-child) {
+                    border-bottom: #29518C 2px solid; 
+                }
+
+                .gauche {
+                    align-content: start;
+                    text-transform: uppercase;
+                    color: #29518C;
+                    text-align: center;
+                    width: 33%;
+                    font-size: 15px;
+                    padding-top: 5px;
+                    border-right: #29518C 2px solid;
+                }
+                .droite {
+                    width: 66%;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: rgba(39, 36, 36, 0.692);
+
+                    > div {
+                        padding: 5px;
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: space-between;
+                        &:not(:last-child) {
+                            border-bottom: 1px solid;  
+                        }
+                        div:first-child {
+                            width: 60%;
+                            @media screen and (max-width: 600px) {
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .sous-droite {
+                        flex-direction: column; align-items: start;
+                        .listing {
+                            width: 100%;
+                        }
+                        ul {
+                            all: unset;
+                        }
+                        li {
+                            all: unset;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center; 
+                            justify-content: space-between;
+                            padding: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            list-style: square;
+                        }
+                    }
+
+                    ul, li {
+                        width: 100%;
+                    }
+
+                    button {
+                        all: unset;
+                        display: flex; justify-content: center; align-items: center; text-align: center;
+                        border: #29518C 1px solid;
+                        padding: 3px;
+                        border-radius: 3px;
+                        font-size: 14px;
+                        background-color: white;
+                        color: #29518C;
+                        &:hover {
+                            background-color: #6091CC;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/**************************/
+img[alt="certificat"]{
+    height: 22px;
+    margin-left: 5px;
+}

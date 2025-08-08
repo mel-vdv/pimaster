@@ -1,0 +1,46 @@
+<div class="container-navig">
+    <div>
+        <div [class.selected]="choice === 'home'" (click)="choice = 'home'">
+            <a routerLink="home">{{ 'accueil' | translate }}<img src="../../assets/images/home.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'resume'" (click)="choice = 'resume'">
+            <a routerLink="resume">{{ 'resume' | translate }}<img src="../../assets/images/parcours.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'surgery'" (click)="choice = 'surgery'">
+            <a routerLink="surgery">{{ 'chirurgie' | translate }}<img src="../../assets/images/chir.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'teaching'" (click)="choice = 'teaching'">
+            <a routerLink="teaching">{{ 'cours' | translate }}<img src="../../assets/images/cursus.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'research'" (click)="choice = 'research'">
+            <a routerLink="research">{{ 'recherche' | translate }} <img src="../../assets/images/livre.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'contact'" (click)="choice = 'contact'">
+            <a routerLink="contact">{{ 'contact' | translate }} <img src="../../assets/images/enveloppe.svg"/></a>
+        </div>
+    </div>
+</div>
+<div class="container-navig-mobile">
+    <div (click)="menuVis = !menuVis;" class="hamburger"><img alt="menu" src="../../assets/images/menu-ham.svg"/> {{ 'menu' | translate }}</div>
+    
+    <div *ngIf="menuVis" (click)="menuVis= false;" class="menu-mobile">
+        <div [class.selected]="choice === 'home'" (click)="choice = 'home';">
+            <a routerLink="home">{{ 'accueil' | translate }}<img src="../../assets/images/home.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'resume'" (click)="choice = 'resume'">
+            <a routerLink="resume">{{ 'resume' | translate }}<img src="../../assets/images/parcours.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'surgery'" (click)="choice = 'surgery'">
+            <a routerLink="surgery">{{ 'chirurgie' | translate }}<img src="../../assets/images/chir.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'teaching'" (click)="choice = 'teaching'">
+            <a routerLink="teaching">{{ 'cours' | translate }}<img src="../../assets/images/cursus.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'research'" (click)="choice = 'research'">
+            <a routerLink="research">{{ 'recherche' | translate }} <img src="../../assets/images/livre.svg"/></a>
+        </div>
+        <div [class.selected]="choice === 'contact'" (click)="choice = 'contact'">
+            <a routerLink="contact">{{ 'contact' | translate }} <img src="../../assets/images/enveloppe.svg"/></a>
+        </div>
+    </div>
+</div>

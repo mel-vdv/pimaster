@@ -1,0 +1,42 @@
+.container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    .resume {
+        width: min(800px,100vw);
+        height: 70vh;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: white;
+
+        a {
+            all: unset;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            padding: 20px;
+            width: min( 90vw, 250px);
+            color: #29518C;
+            background-color: #6091CC;
+            text-align: center;
+            border-radius: 5px;
+            &:hover {
+                background-color: #29518C;
+                color: white;
+            }
+        }
+        a:first-child {
+            box-sizing: border-box;
+            font-size: 30px;
+            padding: 40px;
+            width: 95%;
+        }
+    }
+}

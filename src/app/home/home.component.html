@@ -1,0 +1,29 @@
+<div class="container-home">
+    <div>
+        <img src="assets/images/white-logo.svg" alt="logo primaster">
+    </div>
+    <div class="coordonnees">
+        <div>
+            D.M.V. Pierre MATHIEU<br>
+            PIMASTER  <small>SRL</small><br>
+            <div class="small">TVA BE1014.402.442</div>
+            <div class="small">
+                Rue du Chaufour 18 <br>
+                5190 SPY
+            </div>
+            <div class="small"> +32 475 448 678</div>
+            <div class="small">IBAN: BE22 3632 4831 1047</div>
+        </div>
+        <div> 
+            {{ 'consultation-chez' | translate }}<br>
+            <div class="displ-flex"><img src="./../../assets/images/web.svg" alt="web"/><a target="_blank" href="{{bevetLink}}">BeVet</a></div>
+            <div class="displ-flex"><img src="./../../assets/images/maps.svg" alt="maps"/><a target="_blank" href="{{mapsLink}}">{{ 'location' | translate }}</a></div>
+        </div>
+        <div>
+            {{ "veterinaire-petits-animaux" | translate }} <br>
+            {{ "chirurgie-ortho" | translate }} <br>
+            {{ "arthroscopie" | translate }} <br>
+            {{ "chir-neuro" | translate }}
+        </div>
+    </div>
+</div>

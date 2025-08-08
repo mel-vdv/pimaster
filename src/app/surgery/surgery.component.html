@@ -1,0 +1,207 @@
+<div class="container">
+    <div class="tables-container">
+        <div class="bloc">
+            <div class="themes">{{ "orthopedie" | translate }}</div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "fractures" | translate }}</div>
+                <div class="droite">
+                    <div>
+                        <div>
+                            {{ 'plaques-et-vis' | translate }} - Radius Cubitus
+                        </div>
+                        <button (click)="openPdf('CR/CR ospv Radius cubitus')">Case-report</button> 
+                    </div>
+                    <div>
+                        <div>{{ 'enclouages' | translate }}</div>
+                    </div>
+                    <div>
+                        <div>{{ 'fixateurs-externes' | translate }}</div>
+                    </div>
+                    <div>
+                        <div>
+                            ILOC Nail<br>
+                            ({{ 'cblo' | translate }})
+                        </div>
+                        <button (click)="openPdf('CR/CR Iloc Femur')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            MIPO <br>({{ 'mipo' | translate }})
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            {{ 'osteotomies-de-correction' | translate }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">RLCA</div>
+                <div class="droite">
+                    <div>
+                        <div>
+                            {{ 'extra-caps' | translate }}
+                        </div>
+                        <button (click)="openPdf('CR/Case Report genou extra capsulaire')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            TTA <br>
+                            ({{ 'tta' | translate }})
+                        </div>
+                    </div>
+                    
+                    <div class="sous-droite">
+                        TALIA (TTA all in one method)
+                        <div class="listing">
+                            <ul>
+                                <li>- {{"procédé" | translate }} <button (click)="openPdf('PC/pres-talia')">{{ "procédé" | translate }}</button></li>
+                                <li>- {{"chat" | translate }} <button (click)="openPdf('CR/Case Report TALIA cat')">Case-report</button></li>
+                                <li>- {{"chien" | translate }} <button (click)="openPdf('CR/Case Report TALIA dog')">Case-report</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            TPLO <img alt="certificat" src="assets/images/parcours-bleu.svg" (click)="openPdf('certif/certif-TPLO')"/> <br>
+                            ({{ 'tplo' | translate }}) 
+                        </div>
+                        <button (click)="openPdf('CR/Case Report TPLO genou')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            CBLO <br>
+                            ({{ 'cblo' | translate }})
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">
+                    {{ 'chir-art' | translate }}
+                </div>
+                <div class="droite">
+                    <div>
+                        <div>
+                            {{ 'coude' | translate}}: NUPA
+                        </div>
+                        <button (click)="openPdf('CR/Case Report NUPA')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            {{ 'luxation-carpe' | translate}} - {{ 'chat' | translate}}
+                        </div>
+                        <button (click)="openPdf('CR/Case report Fixateur externe luxation carpe chat')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            {{ 'luxation-tibio-talienne' | translate}} - {{ 'chien' | translate}}
+                        </div>
+                        <button (click)="openPdf('CR/Case Report Luxation tibio talienne fixateur externe triangulé')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            {{ 'luxation-rotule' | translate}} - {{ 'chat' | translate}}
+                        </div>
+                        <button (click)="openPdf('CR/Case Report Luxation rotule chat')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>
+                            {{ 'excision-tete-col-femur' | translate}} - {{ 'chien' | translate}}
+                        </div>
+                        <button (click)="openPdf('CR/CR Excision TC')">Case-report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc">
+            <div class="themes">{{ "arthroscopie" | translate }}</div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "epaule" | translate }}</div>
+                <div class="droite">
+                    <div>
+                        <div>
+                            OCD
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            {{"tendons-biceps" | translate }}
+                        </div>
+                        <button (click)="openPdf('CR/Case Report Arthroscopie epaule')">Case-report</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "coude" | translate }}</div>
+                <div class="droite">
+                    <div>
+                        <div>FMCP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "genou" | translate }}</div>
+                <div class="droite">
+                    <div>
+                        <div>{{ "menisque" | translate }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc">
+            <div class="themes">
+                {{ "neurochirurgie" | translate }}
+                <img alt="certificat" src="assets/images/parcours.svg" (click)="openPdf('certif/certif-neuromed')"/>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "hernie-discale" | translate }}</div>
+                <div class="droite">
+                    <div> 
+                        <div>HT I</div>
+                        <button (click)="openPdf('CR/Case Report Neurochir HDTI')">Case-report</button>
+                    </div>
+                    <div> 
+                        <div>HT II</div>
+                        <button (click)="openPdf('CR/Case Report HDTII')">Case-report</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">WOBBLER DACSM</div>
+                <div class="droite">
+                     <div> 
+                        <div>IVLS</div>
+                        <button (click)="openPdf('CR/CR HDTII IVLS chien')">Case-report</button>
+                    </div>
+                    <div> 
+                        <div>CLOX</div>
+                        <button (click)="openPdf('CR/CR wobbler DACSM CLOX chien')">Case-report</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-themes">
+                <div class="gauche">{{ "cerveau" | translate }}</div>
+                <div class="droite"></div>
+            </div>
+            
+            <div class="sous-themes">
+                <div class="gauche">{{ "procédures-complexes" | translate }}</div>
+                <div class="droite">
+                    <div>
+                        <div>{{ "queue-cheval" | translate }}</div>
+                        <button (click)="openPdf('CR/CR lombalgies complexes')">Case-report</button>
+                    </div>
+                    <div>
+                        <div>{{ "nerf-spinal" | translate }}</div>
+                        <button (click)="openPdf('CR/CR lombalgies complexes')">Case-report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

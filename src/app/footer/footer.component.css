@@ -1,0 +1,29 @@
+.container{
+    width: 100vw;
+    height: 5vh;
+    background-color: #29518C;
+    bottom: 0;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.small {
+    font-size: 12px;
+    font-family: 'Pragmatica-soft';
+    font-weight: normal;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 11px;
+    }
+    .small {
+        font-size: 12px;
+    }
+}

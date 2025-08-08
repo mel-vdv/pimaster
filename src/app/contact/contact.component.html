@@ -1,0 +1,57 @@
+
+<div class="container"> 
+    <div *ngIf="!!notif" id="notif">
+        {{notif}}
+    </div>
+    <form *ngIf="notif === ''" [formGroup]="f" class="container-form" (ngSubmit)="onSubmit()">
+        <div class="titre">{{ "form-contact" | translate }}</div>
+        <div class="moitie">
+            <div>
+                <label for="nom">{{ "nom" | translate }}  </label>
+                <div>
+                    <input type="text" id="nom" formControlName="lastname">
+                </div>
+            </div>
+            <div *ngIf="f.get('lastname')?.invalid && f.get('lastname')?.touched">
+                <small *ngIf="f.get('lastname')?.errors?.['required']">{{ 'required' | translate }}.</small>
+            </div>
+            <div>
+                <label for="prenom">{{ "prenom" | translate }}  </label>
+                <div>
+                    <input type="text" id="prenom" formControlName="firstname">
+                </div>
+            </div>
+            <div *ngIf="f.get('firstname')?.invalid && f.get('firstname')?.touched">
+                <small *ngIf="f.get('firstname')?.errors?.['required']">{{ 'required' | translate }}.</small>
+            </div>
+            <div>
+                <label for="tel">{{ "tel" | translate }} </label>
+                <div>
+                    <input type="tel" id="tel" formControlName="phone">
+                </div>
+            </div>
+            <div>
+                <label for="email">{{ "email" | translate }}  </label>
+                <div>
+                    <input type="email" id="email" formControlName="email">
+                </div>
+            </div>
+            <div *ngIf="f.get('email')?.invalid && f.get('email')?.touched">
+                <small *ngIf="f.get('email')?.errors?.['required']">{{ 'required' | translate }}.</small>
+                <small *ngIf="f.get('email')?.errors?.['email']">Entrez une adresse email valide.</small>
+            </div>
+        </div>
+        <div class="moitie">
+            <div>
+                <textarea name="message" id="message" formControlName="message" placeholder="{{ 'message' | translate }}"></textarea>
+            </div>
+            <div *ngIf="f.get('message')?.invalid && f.get('message')?.touched">
+                <small *ngIf="f.get('message')?.errors?.['required']">{{ "required" | translate }}.</small>
+                <small *ngIf="f.get('message')?.errors?.['message']">{{ "trop-court" | translate }}.</small>
+            </div>
+            <div>
+                <button type="submit" [disabled]="f.invalid">{{ "envoyer" | translate }}<img src="../../assets/images/send.svg"/></button>
+            </div>
+        </div>
+    </form>
+</div>
